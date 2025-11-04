@@ -27,7 +27,14 @@ nav * {
     z-index: 1;
     position: relative;
     bottom: 10rem;
-
+    margin: auto;
     background-color: #F7F7F7;
     width: 75%;
+}
+body
+{
+    background-color: #FFF8D4;
+}
+header{
+    background-color: white;
 }
