@@ -27,7 +27,11 @@ nav * {
     z-index: 1;
     position: relative;
     bottom: 10rem;
-
+    margin: auto;
     background-color: #F7F7F7;
     width: 75%;
+}
+main
+{
+    background-color: #FFF8D4;
 }
