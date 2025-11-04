@@ -14,6 +14,20 @@ nav * {
     background-color: #84994F;
     color: white;
 }
-#golfHeader
-{
+
+#golfVideo {
+
+}
+
+#overlayElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    bottom: 10rem;
+
+    background-color: #F7F7F7;
+    width: 75%;
 }
