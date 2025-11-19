@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="restaurant.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -17,5 +18,40 @@
 
     </nav>
 </header>
+<main>
+    <section>
+        <!--
+            Video courtesy of matthias on pixabay
+            user_id:2428210
+            https://pixabay.com/videos/bavaria-golf-golf-course-nature-313635/
+        -->
+        <video id="golfVideo" src="./media/golfVideo.mp4" muted autoplay style="width: 100vw; z-index: -1;"></video>
+
+        <article id="overlayElement">
+            <div>
+                <p class="subheading">Kelowna's premier golf club</p>
+                <p>Chilliwack beef, Armstrong cheese, and exquisite salmon caught off the coast of Vancouver island are a staple of our diverse menu at the Last Putt. </p>
+                <p id="body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+            <aside>
+                <h2>Bookings</h2>
+                <form>
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                    <button type="submit">Book Now</button>
+                </form>
+            </aside>
+
+    </section>
+</main>
 </body>
 </html>
