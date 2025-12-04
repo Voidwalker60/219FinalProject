@@ -2,52 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Memberships</title>
-    <script src="generalAnimations.js"></script>
+    <title>Memberships - Okanagan Golf & Country Club</title>
+    <link rel="stylesheet" href="memberships.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel = "stylesheet" href = "index.css">
+    <script src="generalAnimations.js"></script>
 </head>
+
 <body>
+
 <header>
     <b id="title">Okanagan Golf and Country Club</b>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="course.html">Course</a>
-        <a href="memberships.html">Memberships</a>
+        <a href="memberships.html" class="active">Memberships</a>
         <a href="facilities.html">Facilities</a>
         <a href="restaurant.html">Restaurant</a>
-
+        <a href="contact.html">Contact Us</a>
     </nav>
 </header>
-<section class="hero">
-    <h2>Membership Options</h2>
-    <p>Become part of our golf community and enjoy premium club benefits.</p>
-</section>
 
+<!-- Hero Image Section -->
+<div class="hero-section">
+    <img src="images/golf_membership.jpg" class="hero-image" alt="Golf Course Membership">
+</div>
+
+<!-- Intro Overlay -->
+<div id="overlayElement">
+    <h1>Membership Options</h1>
+    <p>Join our community and enjoy exclusive benefits, priority course access, and premium club facilities designed for every golfer.</p>
+</div>
+
+<!-- Membership Boxes -->
 <section class="membership-container">
-    <div class = "membership-card">
-        <h3>Full Membership</h3>
-        <p>Unlimited course access, priority bookings, and full club privileges.</p>
-        <span class = "price">$150/ month</span>
+
+    <div class="membership-box">
+        <h2>Full Membership</h2>
+        <p class="price">$150 / month</p>
+        <ul>
+            <li>Unlimited course access</li>
+            <li>Priority tee-time booking</li>
+            <li>Access to all club facilities</li>
+            <li>Exclusive member events</li>
+        </ul>
     </div>
 
-    <div class="membership-card">
-        <h3>Weekday Membership</h3>
-        <p>Perfect for relaxed weekday golfing Monday through Friday.</p>
-        <span class="prince">$100/month</span>
+    <div class="membership-box">
+        <h2>Weekday Membership</h2>
+        <p class="price">$100 / month</p>
+        <ul>
+            <li>Access Monday–Friday</li>
+            <li>Perfect for flexible golfers</li>
+            <li>Reduced crowd times</li>
+        </ul>
     </div>
 
-    <div class="membership-card">
-        <h3>Student Membership</h3>
-        <p>Reduced pricing for students under 25 with a valid ID</p>
-        <span class ="price">$80/month</span>
+    <div class="membership-box">
+        <h2>Student Membership</h2>
+        <p class="price">$80 / month</p>
+        <ul>
+            <li>Discounted rates for students</li>
+            <li>Must be under 25 with valid ID</li>
+            <li>Full facility access</li>
+        </ul>
     </div>
 
-    <div class="membership-card">
-        <h3>Family Membership</h3>
-        <p>Includes two adults with two children under 18</p>
-        <span class ="price">$220/month</span>
+    <div class="membership-box">
+        <h2>Family Membership</h2>
+        <p class="price">$220 / month</p>
+        <ul>
+            <li>Covers 2 adults + 2 children</li>
+            <li>Weekend and holiday access</li>
+            <li>Perfect for family golf outings</li>
+        </ul>
     </div>
+
 </section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Okanagan Golf & Country Club</p>
+    <p>2026 Okanagan Golf & Country Club • Kelowna, BC • 123-456-7890</p>
+</footer>
+
 </body>
 </html>

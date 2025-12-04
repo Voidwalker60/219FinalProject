@@ -1,26 +1,130 @@
-body{
-    margin:0;
+/* GENERAL PAGE RESET */
+body {
+    margin: 0;
     padding: 0;
     background-color: #FFF8D4;
-    font-family: Georgia,serif;
+    font-family: Georgia, serif;
 }
 
-#title{
-    font-size: 2.3em;
-    padding: 10px;
-    display: block;
-    text-align: center;
-}
-
-nav{
-    background-color: #84994F;
-    padding: 10px 0;
+header {
+    background: #FFF8D4;
+    padding: 20px;
+    position: relative;
+    z-index: 1000;
     text-align: left;
 }
 
-nav a {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: underline;
+#title {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
 
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #84994F;
+    color: white;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+nav a.active,
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================= */
+/* HERO SECTION */
+/* ========================================= */
+
+.hero-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ========================================= */
+/* OVERLAY INTRO */
+/* ========================================= */
+
+#overlayElement {
+    background: white;
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#overlayElement h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* ========================================= */
+/* MEMBERSHIP BOXES */
+/* ========================================= */
+
+.membership-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.membership-box {
+    width: 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 6px solid #84994F;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.membership-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #84994F;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.membership-box ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+footer {
+    text-align: center;
+    background-color: #84994F;
+    color: white;
+    padding: 30px;
+    font-size: 1rem;
+    margin-top: 40px;
 }
