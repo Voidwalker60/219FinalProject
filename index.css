@@ -15,8 +15,43 @@ nav * {
     color: white;
 }
 
-#golfVideo {
+@media screen and (min-width: 992px) {
 
+    #overlayElement {
+        bottom: 20rem;
+        height: fit-content;
+    }
+    #pageImage
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 768px) {
+
+    #overlayElement {
+        bottom: 10rem;
+        height: fit-content;
+    }
+    #pageImage
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    #overlayElement {
+        bottom: 10rem;
+        height: fit-content;
+    }
+}
+
+
+
+#pageImage {
+    position: relative;
+    z-index: -1;
 }
 
 #overlayElement {
@@ -25,16 +60,17 @@ nav * {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    position: relative;
-    bottom: 10rem;
+    position: absolute;
     margin: auto;
+    left: 7.5%;
     background-color: #F7F7F7;
-    width: 110%;
+    width: 85%;
 }
-body
-{
+
+body {
     background-color: #FFF8D4;
 }
-header{
+
+header {
     background-color: white;
 }
