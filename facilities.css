@@ -7,14 +7,15 @@
 }
 @media screen and (min-width: 768px) {
     #pageImage {
-        height: 100vh;
+        height: auto;
         width: 100vw;
+        z-index: -1;
+
     }
 
     #pageImage {
         position: absolute;
-        z-index: -1;
-        bottom: 7rem;
+
 
     }
 }
