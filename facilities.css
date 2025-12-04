@@ -7,14 +7,19 @@
 }
 @media screen and (min-width: 768px) {
     #pageImage {
-        height: 100vh;
+        height: auto;
         width: 100vw;
+        z-index: -1;
     }
 
     #pageImage {
         position: absolute;
-        z-index: -1;
-        bottom: 7rem;
-
     }
+}
+h3
+{
+    text-align: center;
+    background-color: #84994F;
+    color: white;
+    padding: 1em 2em;
 }
