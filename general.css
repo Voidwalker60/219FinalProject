@@ -1,0 +1,55 @@
+#title {
+    text-align: center;
+    font-size: 2em;
+}
+
+#bookingBar {
+    position: fixed;
+    right: 0;
+}
+
+nav * {
+    padding: 0.5em 1em;
+    display: inline-block;
+    background-color: #84994F;
+    color: white;
+}
+@media screen and (min-width: 992px) {
+
+    #overlayElement {
+        height: fit-content;
+    }
+
+}
+@media screen and (min-width: 768px) {
+
+    #overlayElement {
+        top: 32rem;
+    }
+    #pageImage
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+#overlayElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    left: 7.5%;
+    background-color: #F7F7F7;
+    width: 85%;
+}
+body {
+    background-color: #FFF8D4;
+}
+
+header {
+    background-color: white;
+}

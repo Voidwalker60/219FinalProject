@@ -1,76 +1,20 @@
-#title {
-    text-align: center;
-    font-size: 2em;
-}
-
-#bookingBar {
-    position: fixed;
-    right: 0;
-}
-
-nav * {
-    padding: 0.5em 1em;
-    display: inline-block;
-    background-color: #84994F;
-    color: white;
-}
-
 @media screen and (min-width: 992px) {
-
-    #overlayElement {
-        bottom: 20rem;
-        height: fit-content;
-    }
-    #pageImage
-    {
+    #pageImage {
         height: 100vh;
         width: 100vw;
     }
 }
 @media screen and (min-width: 768px) {
-
-    #overlayElement {
-        bottom: 10rem;
-        height: fit-content;
-    }
-    #pageImage
-    {
+    #pageImage {
         height: 100vh;
         width: 100vw;
     }
 }
-@media only screen and (max-width: 768px) {
-
-    #overlayElement {
-        bottom: 10rem;
-        height: fit-content;
-    }
-}
-
-
-
 #pageImage {
-    position: relative;
-    z-index: -1;
-}
-
-#overlayElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
     position: absolute;
-    margin: auto;
-    left: 7.5%;
-    background-color: #F7F7F7;
-    width: 85%;
+    z-index: -1;
+    bottom: 7rem;
+
 }
 
-body {
-    background-color: #FFF8D4;
-}
 
-header {
-    background-color: white;
-}

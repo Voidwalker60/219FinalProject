@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="general.css">
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,30 +45,46 @@
                     perfect atmosphere to celebrate your game. Interested in joining our community? Visit our
                     Memberships page to explore our exclusive privileges and packages.
                 </p>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <button style="background-color: #84994F; color: white; border: none; padding: 10px 20px; margin: 0 10px; font-size: 1em; cursor: pointer;"
+                            onclick="alert('Booking system coming soon!')">Book a Tee Time
+                    </button>
+                    <a href="memberships.html"
+                       style="background-color: #333; color: white; text-decoration: none; padding: 10px 20px; margin: 0 10px; display: inline-block;">View
+                        Memberships</a>
+
+
+                </div>
+                <aside>
+                    <script>
+                        const memJSON = fetch("https://git.madnas.synology.me/api/v1/repos/voidwalker604/nameFile/contents/memberships.json", {method: 'GET'});
+                        memJSON.then(response => response.json()).then(response => {
+                            memList = JSON.parse(atob(response.content));
+                            let i = 0;
+                            let counter = setInterval(() => {
+                                document.getElementById("memberships").innerHTML = parseInt(document.getElementById("memberships").innerHTML) + 1;
+                                i++
+                                if (i === memList.length) {
+                                    clearInterval(counter);
+                                }
+                            }, 10);
+
+
+                        })
+
+                    </script>
+                    <p style="text-align: center;">Proudly serving</p>
+                    <h3 id="memberships" style="text-align: center;">0</h3>
+                    <p style="text-align: center;"> members across the okanagan</p>
+
+                    <hr style="width: 80%; margin: 1rem auto; border: 1px solid #ccc;">
+                    <div style="text-align: center;">
+                        <h3>Course Status</h3>
+                        <p><strong>The Ridge:</strong> <span style="color: green;">Open</span> - Carts Allowed</p>
+                        <p><strong>The Valley:</strong> <span style="color: green;">Open</span> - 90° Rule in Effect</p>
+                    </div>
+                </aside>
             </div>
-            <aside>
-                <script>
-                    const memJSON = fetch("https://git.madnas.synology.me/api/v1/repos/voidwalker604/nameFile/contents/memberships.json", {method: 'GET'});
-                    memJSON.then(response => response.json()).then(response => {
-                        memList = JSON.parse(atob(response.content));
-                        let i = 0;
-                        let counter = setInterval(() => {
-                            document.getElementById("memberships").innerHTML = parseInt(document.getElementById("memberships").innerHTML) + 1;
-                            i++
-                            if (i === memList.length) {
-                                clearInterval(counter);
-                            }
-                        }, 10);
-
-
-                    })
-
-                </script>
-                <p style="text-align: center;">Proudly serving</p>
-                <h3 id="memberships" style="text-align: center;">0</h3>
-                <p style="text-align: center;"> members across the okanagan</p>
-            </aside>
-
         </article>
 
     </section>
