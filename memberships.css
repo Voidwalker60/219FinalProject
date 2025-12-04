@@ -1,4 +1,4 @@
-/* GENERAL PAGE RESET */
+
 body {
     margin: 0;
     padding: 0;
@@ -36,9 +36,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ========================================= */
-/* HERO SECTION */
-/* ========================================= */
+
 
 .hero-section {
     width: 100%;
@@ -51,9 +49,7 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* ========================================= */
-/* OVERLAY INTRO */
-/* ========================================= */
+
 
 #overlayElement {
     background: white;
@@ -70,9 +66,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* ========================================= */
-/* MEMBERSHIP BOXES */
-/* ========================================= */
+
 
 .membership-container {
     display: flex;
@@ -116,9 +110,6 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* ========================================= */
-/* FOOTER */
-/* ========================================= */
 
 footer {
     text-align: center;
