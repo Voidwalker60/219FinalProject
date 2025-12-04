@@ -32,7 +32,14 @@ nav * {
         width: 100vw;
     }
 }
-
+h3
+{
+    text-align: center;
+    background-color: #84994F;
+    box-shadow: #37353E 0.25em 0.25em 0.25em;
+    color: white;
+    padding: 1em 2em;
+}
 
 #overlayElement {
     display: flex;

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="general.css">
+
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="generalAnimations.js"></script>
@@ -21,51 +23,57 @@
     </nav>
 </header>
 <main>
+    <img id="golfVideo" src="./media/restaurant.jpg" style="width: 100vw; z-index: -1;"
+         alt="A photo of our restaurant">
     <section>
         <!--
             Image courtesy of oldetownsouth on wikipedia
             https://commons.wikimedia.org/wiki/File:20230522-184209-646bb4977f536image-181284969.jpg        -->
-        <img id="golfVideo" src="./media/restaurant.jpg" style="width: 100vw; z-index: -1;"
-             alt="A photo of our restaurant">
 
-        <article id="overlayElement">
-            <div>
-                <h2 class="subheading" style="color:white;">The Last putt restaurant</h2>
-                <p>Chilliwack beef, Armstrong cheese, and exquisite salmon caught off the coast of Vancouver island are
-                    a staple of our diverse menu at the Last Putt. </p>
-                <p id="body">
-                    At The Last Putt, we believe that exceptional dining begins with the finest local ingredients. Our
-                    culinary team is proud to showcase the best of British Columbia, crafting a diverse menu that
-                    features tender Chilliwack beef, rich Armstrong cheese, and exquisite salmon caught fresh off the
-                    coast of Vancouver Island. Whether you are celebrating a hole-in-one or simply enjoying an evening
-                    out, join us for a meal that captures the true taste of the region.
-                </p>
-            </div>
-            <aside>
-                <h2>Bookings</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="date">Date</label>
-                    <input type="date" id="date">
-                    <label for="time">Time</label>
-                    <input type="time" id="time">
-                    <button type="submit">Book Now</button>
-                </form>
-            </aside>
-        </article>
-        <div id="timeTable" style="color:white;">
-            <ul>
-                <li>Lunch: 11:00 AM – 2:00 PM</li>
-                <li>Dinner: 5:00 PM – 10:00 PM</li>
-                <li>Bar Service: 11:00 AM – 2:00 AM</li>
-            </ul>
-        </div>
+
+            <article id="overlayElement">
+                <div>
+                    <h3 class="subheading" >The Last putt restaurant</h3>
+                    <p>Chilliwack beef, Armstrong cheese, and exquisite salmon caught off the coast of Vancouver island are
+                        a staple of our diverse menu at the Last Putt. </p>
+                    <p id="body">
+                        At The Last Putt, we believe that exceptional dining begins with the finest local ingredients. Our
+                        culinary team is proud to showcase the best of British Columbia, crafting a diverse menu that
+                        features tender Chilliwack beef, rich Armstrong cheese, and exquisite salmon caught fresh off the
+                        coast of Vancouver Island. Whether you are celebrating a hole-in-one or simply enjoying an evening
+                        out, join us for a meal that captures the true taste of the region.
+                    </p>
+                </div>
+                <aside>
+                    <h3>Bookings</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+                        <button type="submit">Book Now</button>
+                    </form>
+                </aside>
+                <div id="timeTable" style="flex-direction:column">
+                    <ul>
+                        <li>Lunch: 11:00 AM – 2:00 PM</li>
+                        <li>Dinner: 5:00 PM – 10:00 PM</li>
+                        <li>Bar Service: 11:00 AM – 2:00 AM</li>
+                    </ul>
+                </div>
+                <footer class="site-footer">
+                    <p> 2026 Okangan Golf & Country Club</p>
+                    <p>Kelowna, BC / 123-456-7890</p>
+                </footer>
+            </article>
+
+
+
+
     </section>
 </main>
-<footer class="site-footer">
-    <p> 2026 Okangan Golf & Country Club</p>
-    <p>Kelowna, BC / 123-456-7890</p>
-</footer>
+
 </body>
 </html>
