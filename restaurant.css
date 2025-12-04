@@ -34,6 +34,18 @@ aside label, aside h2
         height:100vh;
     }
 }
+@media screen and (min-width: 768px) {
+    #overlayElement {
+        top: 10rem;
+    }
+    #pageImage
+    {
+        height:100vh;
+    }
+
+}
+
+
 .site-footer{
     text-align: center;
     padding: 1rem;

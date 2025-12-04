@@ -10,10 +10,12 @@
         height: auto;
         width: 100vw;
         z-index: -1;
+        position: absolute;
+
     }
 
+
     #pageImage {
-        position: absolute;
     }
 }
 h3
