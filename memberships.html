@@ -36,6 +36,7 @@
             <li>Access to all club facilities</li>
             <li>Exclusive member events</li>
         </ul>
+        <button class="joinBTN">Join Now</button>
     </div>
     <div class="membership-box">
         <h2>Weekday Membership</h2>
@@ -45,6 +46,7 @@
             <li>Perfect for flexible golfers</li>
             <li>Reduced crowd times</li>
         </ul>
+        <button class="joinBTN">Join Now</button>
     </div>
     <div class="membership-box">
         <h2>Student Membership</h2>
@@ -54,6 +56,7 @@
             <li>Must be under 25 with valid ID</li>
             <li>Full facility access</li>
         </ul>
+        <button class="joinBTN">Join Now</button>
     </div>
     <div class="membership-box">
         <h2>Family Membership</h2>
@@ -63,8 +66,38 @@
             <li>Weekend and holiday access</li>
             <li>Perfect for family golf outings</li>
         </ul>
+        <button class="joinBTN">Join Now</button>
     </div>
 </section>
+<div id="signUp" class="modal">
+    <div class="content">
+        <span id="close">&times;</span>
+        <h2>Join Membership</h2>
+        <p>Please enter your details:</p>
+        <input type="text" placeholder="Your Name" class="inputField"><br><br>
+        <input type="email" placeholder="Your Email" class="inputField"><br><br>
+        <button id = "submitBTN" class="submitBTN">Submit</button>
+    </div>
+</div>
+
+<script>
+
+        document.querySelectorAll(".joinBTN").forEach(button => {
+        button.onclick = function() {
+            document.getElementById("signUp").style.display = "flex";
+        };
+    });
+
+        document.getElementById("close").onclick = function() {
+        document.getElementById("signUp").style.display = "none";
+    };
+
+        document.getElementById("submitBTN").onclick = function() {
+        alert("Submitted successfully!");
+        document.getElementById("signUp").style.display = "none";
+    };
+
+</script>
 <footer>
     <p>© 2025 Okanagan Golf & Country Club</p>
     <p>2026 Okanagan Golf & Country Club • Kelowna, BC • 123-456-7890</p>
