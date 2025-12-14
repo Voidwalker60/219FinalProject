@@ -14,10 +14,28 @@
 
     }
 
-
-    #pageImage {
-    }
 }
+
+.hero{
+    min-height: 60vh;
+    background:
+            linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.15)),
+            url("./media/facilities.jpg") center/cover no-repeat;
+    display: grid;
+    padding: 4rem 1.25rem;
+}
+
+.hero__content{
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero__content h1{
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0 0 .5rem 0;
+}
+
 h3
 {
     text-align: center;

@@ -7,14 +7,14 @@
 - [x] Responsive design adapts to various screen sizes 5pts\
 Do Responsive sizings with css
 - [x] jQuery effects (fade, slide, animations) implemented correctly 10pts
-- [ ] Enhances user experience appropriately 5pts
-- [ ] Reads from a file and displays content dynamically 10pts\
+- [x] Enhances user experience appropriately 5pts
+- [x] Reads from a file and displays content dynamically 10pts\
 Member count, Members, 
 - [x] Code is clean, efficient, and error-free 5pts
-- [ ] Form validation implemented and functional 10pts
-- [ ] Provides clear feedback to users 5pts
-- [ ] Code is well-organized, commented, and readable 5pts
-- [ ] Unique design, thoughtful UX, and creative
+- [x] Form validation implemented and functional 10pts
+- [x] Provides clear feedback to users 5pts
+- [x] Code is well-organized, commented, and readable 5pts
+- [x] Unique design, thoughtful UX, and creative
   touches 5pts
 
 Poojitha
